@@ -16,6 +16,8 @@ public class testscript1 : MonoBehaviour
         if(Input.GetKeyDown("1")){
             print("script works");
         }
-        
+         if(Input.GetKeyDown("2")){
+            print("2 button hit");
+        }
     }
 }
