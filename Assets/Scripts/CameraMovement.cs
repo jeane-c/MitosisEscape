@@ -12,19 +12,23 @@ public class CameraMovement : MonoBehaviour
     }
 
     float inputX, inputZ;
+    int degree = 0;
     // Update is called once per frame
     void Update()
     {
         inputX = Input.GetAxis("Horizontal");
         inputZ = Input.GetAxis("Vertical");
         
-        if (inputX != 0)
-            rotate();
-        if (inputZ != 0)
-            move();
+       // if (inputX != 0)
+       //     rotate();
+       // if (inputZ != 0)
+       //     move();
 
-      
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+            transform.Rotate(new Vector3(0f, degree - 90, 0f));
 
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+            transform.Rotate(new Vector3(0f, degree + 90, 0f));
 
 
     }
