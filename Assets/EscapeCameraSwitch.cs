@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class EscapeCameraSwitch : MonoBehaviour
 {
-    public GameObject Wall5;
-    public GameObject Wall2;
-    public GameObject TableView;
-    public GameObject Wall3;
-    public GameObject Wall4;
+    public GameObject Cam1;
+    public GameObject Cam2;
+    public GameObject Cam3;
+    public GameObject Cam4;
+     public GameObject Cam5;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,42 +19,47 @@ public class EscapeCameraSwitch : MonoBehaviour
     void Update()
     {
          if(Input.GetKeyDown("1")){
-            print("script works");
+           Cam1.SetActive(true);
+            Cam2.SetActive(false);
+            Cam3.SetActive(false);
+            Cam4.SetActive(false);
+               Cam5.SetActive(false);
         }
          if(Input.GetKeyDown("2")){
-            Wall5.SetActive(true);
-            Wall2.SetActive(false);
-            TableView.SetActive(false);
-            Wall3.SetActive(false);
-            Wall4.SetActive(false);
+           
+            Cam1.SetActive(false);
+            Cam2.SetActive(true);
+            Cam3.SetActive(false);
+            Cam4.SetActive(false);
+               Cam5.SetActive(false);
         }
           if(Input.GetKeyDown("3")){
-            Wall2.SetActive(true);
-            Wall5.SetActive(false);
-             TableView.SetActive(false);
-                    Wall4.SetActive(false);
-               Wall3.SetActive(false);
+            Cam1.SetActive(false);
+            Cam2.SetActive(false);
+            Cam3.SetActive(true);
+             Cam4.SetActive(false);
+                Cam5.SetActive(false);
+          
         }
          if(Input.GetKeyDown("4")){
-            Wall2.SetActive(false);
-            Wall5.SetActive(false);
-             TableView.SetActive(true);
-               Wall3.SetActive(false);
-                      Wall4.SetActive(false);
+            Cam1.SetActive(false);
+            Cam2.SetActive(false);
+            Cam3.SetActive(false);
+             Cam4.SetActive(true);
+              Cam5.SetActive(false);
+            
         }
          if(Input.GetKeyDown("5")){
-            Wall2.SetActive(false);
-            Wall5.SetActive(false);
-             TableView.SetActive(false);
-               Wall3.SetActive(true);
-                      Wall4.SetActive(false);
+           Cam1.SetActive(false);
+            Cam2.SetActive(false);
+            Cam3.SetActive(false);
+             Cam4.SetActive(false);
+             Cam5.SetActive(true);
+            
         }
              if(Input.GetKeyDown("6")){
-            Wall2.SetActive(false);
-            Wall5.SetActive(false);
-             TableView.SetActive(false);
-               Wall3.SetActive(false);
-                      Wall4.SetActive(true);
+            
+            
         }
     }
 }
