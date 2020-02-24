@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 145643955}
   - component: {fileID: 145643954}
   m_Layer: 0
-  m_Name: Table View
+  m_Name: TableView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1005,7 +1005,7 @@ GameObject:
   - component: {fileID: 2015859264}
   - component: {fileID: 2015859263}
   m_Layer: 0
-  m_Name: Wall 4
+  m_Name: Wall4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1096,3 +1096,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Wall5: {fileID: 1413693856}
   Wall2: {fileID: 1759176793}
+  TableView: {fileID: 145643953}
+  Wall3: {fileID: 741719915}
+  Wall4: {fileID: 0}
