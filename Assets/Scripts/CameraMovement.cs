@@ -46,4 +46,6 @@ public class CameraMovement : MonoBehaviour
     {
         transform.position += transform.forward * inputZ * Time.deltaTime;
     }
+
+
 }
