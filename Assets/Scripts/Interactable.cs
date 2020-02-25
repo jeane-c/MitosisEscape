@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public string name; //Object name; shown on hover.
+    public string itemName; //Object name; shown on hover.
     public string description; //Object description; shown on click if item can't be picked up. 
     public bool canBeTaken; //Whether or not the object can be picked up.
     public Item item; //The item added to the inventory when the object is picked up.
@@ -12,14 +12,16 @@ public class Interactable : MonoBehaviour
 
     //the CustomCursor in the scene; should only be one.
     private CustomCursor cc;
+    private Inventory inv;
 
     void Start() {
-        cc = GameObject.Find("Cursor").GetComponent<CustomCursor>();
+        cc  = GameObject.Find("Cursor").GetComponent<CustomCursor>();
+        inv = GameObject.Find("Inventory").GetComponent<Inventory>();
     }
 
     void OnMouseOver() {
         //Sets the cursor text to this object's name when hovered over
-        cc.setCursorText(name);
+        cc.setCursorText(itemName);
 
         //On click...
         if (Input.GetMouseButtonDown(0)) {
@@ -46,6 +48,7 @@ public class Interactable : MonoBehaviour
     }
     
     void TakeItem() {
-        //placeholder
+        inv.addItem(item);
+        inv.updateInventoryDisplay();
     }
 }
