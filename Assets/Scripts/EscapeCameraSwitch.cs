@@ -9,6 +9,7 @@ public class EscapeCameraSwitch : MonoBehaviour
     public GameObject Cam3;
     public GameObject Cam4;
      public GameObject Cam5;
+     public GameObject DeskView;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class EscapeCameraSwitch : MonoBehaviour
             Cam3.SetActive(false);
             Cam4.SetActive(false);
                Cam5.SetActive(false);
+               DeskView.SetActive(false);
         }
          if(Input.GetKeyDown("2")){
            
@@ -32,6 +34,7 @@ public class EscapeCameraSwitch : MonoBehaviour
             Cam3.SetActive(false);
             Cam4.SetActive(false);
                Cam5.SetActive(false);
+                DeskView.SetActive(false);
         }
           if(Input.GetKeyDown("3")){
             Cam1.SetActive(false);
@@ -39,6 +42,7 @@ public class EscapeCameraSwitch : MonoBehaviour
             Cam3.SetActive(true);
              Cam4.SetActive(false);
                 Cam5.SetActive(false);
+                 DeskView.SetActive(false);
           
         }
          if(Input.GetKeyDown("4")){
@@ -47,6 +51,7 @@ public class EscapeCameraSwitch : MonoBehaviour
             Cam3.SetActive(false);
              Cam4.SetActive(true);
               Cam5.SetActive(false);
+               DeskView.SetActive(false);
             
         }
          if(Input.GetKeyDown("5")){
@@ -55,11 +60,17 @@ public class EscapeCameraSwitch : MonoBehaviour
             Cam3.SetActive(false);
              Cam4.SetActive(false);
              Cam5.SetActive(true);
+              DeskView.SetActive(false);
             
         }
              if(Input.GetKeyDown("6")){
             
-            
+             Cam1.SetActive(false);
+            Cam2.SetActive(false);
+            Cam3.SetActive(false);
+             Cam4.SetActive(false);
+             Cam5.SetActive(false);
+              DeskView.SetActive(true);
         }
     }
 }
