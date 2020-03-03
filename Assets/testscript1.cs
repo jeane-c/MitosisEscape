@@ -14,7 +14,7 @@ public class testscript1 : MonoBehaviour
     GameObject[] Cams = new GameObject[7];
 
 
-    public int count;
+    public int count = 0;
     public int max = 7;
     public int min = 0;
     // Start is called before the first frame update
@@ -27,7 +27,7 @@ public class testscript1 : MonoBehaviour
     Cams[4] = Cam5;
     Cams[5] = DeskView;
     Cams[6] = ClipBoard;
-    count = 0;
+   
 
     Cams[0].SetActive(true);
     Cams[1].SetActive(false);
@@ -41,10 +41,10 @@ public class testscript1 : MonoBehaviour
         count -= 1;
 
            for(int i = 0; i < Cams.Length; i++){
-               if(i >= max && i != count){
+               if(i > max && i != count){
                    Cams[i].SetActive(false);
                }
-               if(i >= max && i == count){
+               if(i > max && i == count){
                    Cams[i].SetActive(true);
                }
            }
