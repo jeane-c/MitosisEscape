@@ -10,16 +10,21 @@ public class DrawerOpenClose : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void OnMouseDown()
+    void OnMouseOver()
     {
-        animator.SetTrigger("OpenClose");
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.O))
+        Debug.Log("Hovering");
+        if (Input.GetMouseButtonDown(0))
         {
             animator.SetTrigger("OpenClose");
+
         }
     }
+
+    // void Update()
+    // {
+        // if (Input.GetKeyDown(KeyCode.O))
+        // {
+            // animator.SetTrigger("OpenClose");
+        // }
+    // }
 }
