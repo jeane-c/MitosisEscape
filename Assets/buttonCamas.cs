@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class testscript1 : MonoBehaviour
+public class buttonCamas : MonoBehaviour
 {
     public GameObject Cam1;
     public GameObject Cam2;
@@ -29,36 +29,61 @@ public class testscript1 : MonoBehaviour
     Cams[6] = ClipBoard;
    
 
-    Cams[0].SetActive(true);
-    Cams[1].SetActive(false);
+    Cam1.SetActive(true);
+    Cam2.SetActive(false);
     Cam3.SetActive(false);
     Cam4.SetActive(false);
     Cam5.SetActive(false);
     DeskView.SetActive(false);
     ClipBoard.SetActive(false);
     }
-      public void ChangeCameraLeft(){
-        count -= 1;
 
+ public void ChangeCameraLeft(){
+       
+    
+        for(int i = 0; i < Cams.Length; i++){
+              
+            if(Cams[i].activeSelf == true){
+           count = i;
+             print(i);
+        
+              }
+
+         }
+        count = count - 1;
            for(int i = 0; i < Cams.Length; i++){
-               if(i > max && i != count){
+               if(i >= 0 && i < Cams.Length){
+                    if(i != count){
                    Cams[i].SetActive(false);
                }
-               if(i > max && i == count){
+               if(i == count){
                    Cams[i].SetActive(true);
                }
+               }
+               
            }
     }
-
     public void ChangeCameraRight(){
-        count += 1;
+       
+    
+        for(int i = 0; i < Cams.Length; i++){
+              
+            if(Cams[i].activeSelf == true){
+           count = i;
+             print(i);
+        
+              }
 
+         }
+        count = count + 1;
            for(int i = 0; i < Cams.Length; i++){
-               if(i <= max && i != count){
+             if(i >= 0 && i < Cams.Length){
+                    if(i != count){
                    Cams[i].SetActive(false);
                }
-               if(i <= max && i == count){
+               if(i == count){
                    Cams[i].SetActive(true);
+               }
                }
            }
     }

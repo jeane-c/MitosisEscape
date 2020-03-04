@@ -3651,7 +3651,6 @@ GameObject:
   - component: {fileID: 1042060965}
   - component: {fileID: 1042060964}
   - component: {fileID: 1042060963}
-  - component: {fileID: 1042060967}
   m_Layer: 5
   m_Name: RightArrow
   m_TagString: Untagged
@@ -3685,11 +3684,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042060961}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7bad2a1a6ac34572904d1096796f311, type: 3}
+  m_Script: {fileID: 11500000, guid: f9335f9c74e784cf3be7f4d6608a0156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cam1: {fileID: 619404074}
+  Cam2: {fileID: 1345443048}
+  Cam3: {fileID: 320977284}
+  Cam4: {fileID: 1863756604}
+  Cam5: {fileID: 321833030}
+  DeskView: {fileID: 1740840892}
+  ClipBoard: {fileID: 1077531475}
+  count: 0
+  max: 7
+  min: 0
 --- !u!114 &1042060964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3733,7 +3742,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1042060967}
+      - m_Target: {fileID: 1042060963}
         m_MethodName: ChangeCameraRight
         m_Mode: 1
         m_Arguments:
@@ -3784,28 +3793,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042060961}
   m_CullTransparentMesh: 0
---- !u!114 &1042060967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1042060961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9335f9c74e784cf3be7f4d6608a0156, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Cam1: {fileID: 619404074}
-  Cam2: {fileID: 1345443048}
-  Cam3: {fileID: 320977284}
-  Cam4: {fileID: 1863756604}
-  Cam5: {fileID: 321833030}
-  DeskView: {fileID: 1740840892}
-  ClipBoard: {fileID: 1077531475}
-  count: 0
-  max: 6
-  min: 0
 --- !u!4 &1060593784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 458662, guid: facf14ae9ce68b7479827bcf72fba835,
