@@ -23,8 +23,10 @@ public class Interactable : MonoBehaviour
         //Sets the cursor text to this object's name when hovered over
         cc.setCursorText(itemName);
 
+
         //On click...
         if (Input.GetMouseButtonDown(0)) {
+
             if (canBeTaken) { 
                 TakeItem();
                 //Set the description to be blank
@@ -45,8 +47,9 @@ public class Interactable : MonoBehaviour
     void OnMouseExit() {
         //When the mouse is no longer hovering over this object, empty the cursor text
         cc.setCursorText("");
+
     }
-    
+
     void TakeItem() {
         inv.addItem(item);
         inv.updateInventoryDisplay();
