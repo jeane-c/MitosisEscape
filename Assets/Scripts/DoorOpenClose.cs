@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DrawerOpenClose : MonoBehaviour
+public class DoorOpenClose : MonoBehaviour
 {
     Animator animator;
     void Start()
@@ -12,6 +12,7 @@ public class DrawerOpenClose : MonoBehaviour
 
     void OnMouseOver()
     {
+        Debug.Log("Hovering");
         if (Input.GetMouseButtonDown(0))
         {
             animator.SetTrigger("OpenClose");
@@ -19,11 +20,9 @@ public class DrawerOpenClose : MonoBehaviour
         }
     }
 
-    // void Update()
-    // {
-        // if (Input.GetKeyDown(KeyCode.O))
-        // {
-            // animator.SetTrigger("OpenClose");
-        // }
-    // }
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }

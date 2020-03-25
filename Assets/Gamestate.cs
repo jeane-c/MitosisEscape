@@ -18,11 +18,11 @@ public class Gamestate : MonoBehaviour
         stage = 0;
         Debug.Log("hell");
         print("huh");
-        door1.GetComponent<DrawerOpenClose>().GetComponent<Animator>().enabled = false;
-        door2.GetComponent<DrawerOpenClose>().GetComponent<Animator>().enabled = false;
-        door3.GetComponent<DrawerOpenClose>().GetComponent<Animator>().enabled = false;
-        door4.GetComponent<DrawerOpenClose>().GetComponent<Animator>().enabled = false;
-        door5.GetComponent<DrawerOpenClose>().GetComponent<Animator>().enabled = false;
+        door1.GetComponent<DoorOpenClose>().GetComponent<Animator>().enabled = false;
+        door2.GetComponent<DoorOpenClose>().GetComponent<Animator>().enabled = false;
+        door3.GetComponent<DoorOpenClose>().GetComponent<Animator>().enabled = false;
+        door4.GetComponent<DoorOpenClose>().GetComponent<Animator>().enabled = false;
+        door5.GetComponent<DoorOpenClose>().GetComponent<Animator>().enabled = false;
 
         
     }
@@ -34,7 +34,7 @@ public class Gamestate : MonoBehaviour
             stage = 1;
             print("made it");
             //door1.transform.position = new Vector3(-1.5f, 1.3f, 1.0f);
-            door1.GetComponent<DrawerOpenClose>().GetComponent<Animator>().enabled = true;
+            door1.GetComponent<DoorOpenClose>().GetComponent<Animator>().enabled = true;
             door1.transform.GetComponentInChildren<TextMesh>().color =Color.green;
             door2.transform.GetComponentInChildren<TextMesh>().color =Color.red;
             //door1.transform.Rotate(90.0f, 0.0f, 0.0f, Space.Self);
@@ -42,7 +42,7 @@ public class Gamestate : MonoBehaviour
             stage = 2;
             print("made it "+stage);
             //door1.transform.position = new Vector3(-1.5f, 1.3f, 1.0f);
-            door2.GetComponent<DrawerOpenClose>().GetComponent<Animator>().enabled = true;
+            door2.GetComponent<DoorOpenClose>().GetComponent<Animator>().enabled = true;
             door2.transform.GetComponentInChildren<TextMesh>().color =Color.green;
             //door1.transform.Rotate(90.0f, 0.0f, 0.0f, Space.Self);
         }
