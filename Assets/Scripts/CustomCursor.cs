@@ -10,6 +10,7 @@ public class CustomCursor : MonoBehaviour
     //The text UI object attached to the cursor.
     private Text cursorText;
     private Text descriptionText;
+    public Image itemDisplay;
 
     void Start() {
         Cursor.visible = false;
@@ -29,5 +30,9 @@ public class CustomCursor : MonoBehaviour
 
     public void setDescriptionText(string t) {
         descriptionText.text = t;
+    }
+
+    public void setSelectedItemSprite(Sprite s) {
+        itemDisplay.sprite = s;
     }
 }
