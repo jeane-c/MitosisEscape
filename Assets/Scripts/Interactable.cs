@@ -12,11 +12,16 @@ public class Interactable : MonoBehaviour
 
     //the CustomCursor in the scene; should only be one.
     private CustomCursor cc;
+    //the inventory; should also only be one
     private Inventory inv;
+    //array of any PuzzleItem scripts on this object
+    private PuzzleItem[] puzzles;
+
 
     void Start() {
         cc  = GameObject.Find("Cursor").GetComponent<CustomCursor>();
         inv = GameObject.Find("Inventory").GetComponent<Inventory>();
+        puzzles = gameObject.GetComponents<PuzzleItem>();
     }
 
     void OnMouseOver() {
@@ -26,7 +31,6 @@ public class Interactable : MonoBehaviour
 
         //On click...
         if (Input.GetMouseButtonDown(0)) {
-
             if (canBeTaken) { 
                 TakeItem();
                 //Set the description to be blank
@@ -38,6 +42,33 @@ public class Interactable : MonoBehaviour
                     Object.Destroy(gameObject); 
                 }
                 else { canBeTaken = false; }
+            }
+            //if the user is trying to use an item on this object
+            else if (inv.getSelectedItem() != null) {
+                //if this interactable has no puzzles on it, then deselect the item and change description accordingly
+                if (puzzles == null) {
+                    inv.deselectItem();
+                    cc.setDescriptionText("I can't use that here.");
+                }
+                else {
+                    //check any puzzles on this object; if this item works with one of them, then end and move. Otherwise, set description accordingly. 
+                    bool worked = false;
+                    for (int i = 0; i < puzzles.Length; i++) {
+                        if (puzzles[i].useItem(inv.getSelectedItem())) { 
+                            worked = true; 
+                            break; 
+                        }
+                    }
+
+                    if (!worked) { 
+                        inv.deselectItem(); 
+                        cc.setDescriptionText("I can't use that here."); 
+                    }
+                    else {
+                        inv.expendItem();
+                        cc.setDescriptionText("I used the item!");
+                    }
+                }
             }
             //If this object can't be taken, put the description text in the box
             else { cc.setDescriptionText(description); }
