@@ -11,15 +11,19 @@ public class buttonCamas : MonoBehaviour
     public GameObject Cam5;
     public GameObject DeskView;
     public GameObject ClipBoard;
+    public GameObject LeftClick;
+    public GameObject RightClick;
     GameObject[] Cams = new GameObject[7];
 
 
     public int count = 0;
     public int max = 7;
     public int min = 0;
+    public int disableCount = 0;
     // Start is called before the first frame update
     void Start()
     {
+        
     Cams[0] = Cam1;
     Cams[1] = Cam2;
     Cams[2] = Cam3;
@@ -37,19 +41,54 @@ public class buttonCamas : MonoBehaviour
     DeskView.SetActive(false);
     ClipBoard.SetActive(false);
     }
+    public void disableAllCameras(){
+      //do shit here
+    //disable cameras
+      for(int i = 0; i < Cams.Length; i++){
+            
+                 if(Cams[i].activeSelf == true){
+           disableCount = i;
+             print(i);
+            
+              }
+                   Cams[i].SetActive(false);
+               }
+           
+      //disable click buttons on canvas
+      LeftClick.SetActive(false);
+      RightClick.SetActive(false);
+   }
+   public void renableCamera(){
+      //renable this camera here
+       LeftClick.SetActive(true);
+      RightClick.SetActive(true);
+        for(int i = 0; i < Cams.Length; i++){
+                if(disableCount == i){
+                    Cams[i].SetActive(true);
+                }
+                else{
+                     Cams[i].SetActive(false);
+                }
+                   
+               }
+      //renable click buttons  on canvas
+      
+   }
+//work on overflow to the left and right
 
  public void ChangeCameraLeft(){
        
-    
+
         for(int i = 0; i < Cams.Length; i++){
               
             if(Cams[i].activeSelf == true){
            count = i;
              print(i);
-        
+            
               }
 
          }
+         if(count -1 >=0){
         count = count - 1;
            for(int i = 0; i < Cams.Length; i++){
                if(i >= 0 && i < Cams.Length){
@@ -62,6 +101,11 @@ public class buttonCamas : MonoBehaviour
                }
                
            }
+         }
+         else{
+             print("cant go left anymore");
+         }
+      
     }
     public void ChangeCameraRight(){
        
@@ -75,7 +119,8 @@ public class buttonCamas : MonoBehaviour
               }
 
          }
-        count = count + 1;
+         if(count +1 < Cams.Length ){
+              count = count + 1;
            for(int i = 0; i < Cams.Length; i++){
              if(i >= 0 && i < Cams.Length){
                     if(i != count){
@@ -86,6 +131,11 @@ public class buttonCamas : MonoBehaviour
                }
                }
            }
+         }
+          else{
+             print("cant go right anymore");
+         }
+       
     }
     // Update is called once per frame
     void Update()
