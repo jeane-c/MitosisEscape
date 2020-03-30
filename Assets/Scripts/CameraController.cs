@@ -6,12 +6,14 @@ public class CameraController : MonoBehaviour
 {
     //array of all cameras to cycle through; should be sorted left to right
     public Camera[] cameraArray;
+    public GameObject leftButton;
+    public GameObject rightButton;
 
     //last camera that was used
-    private int currentCam = 0;
+    [SerializeField] private int currentCam = 0;
 
     public void Start (){
-        switchToCamera(0);
+        switchToCamera(currentCam);
     }
 
     public void switchToCamera(int index) {
@@ -35,16 +37,20 @@ public class CameraController : MonoBehaviour
 
     public void rotateLeft () {
         currentCam--;
-        if (currentCam <= 0) { currentCam = cameraArray.Length-1; }
+        if (currentCam < 0) { currentCam = cameraArray.Length-1; }
         switchToCamera(currentCam);
     }
 
     public void disableCamera() {
         cameraArray[currentCam].gameObject.SetActive(false);
+        leftButton.SetActive(false);
+        rightButton.SetActive(false);
     }
 
     public void reEnableCurrentCamera() {
         cameraArray[currentCam].gameObject.SetActive(true);
+        leftButton.SetActive(true);
+        rightButton.SetActive(true);
     }
 
     
