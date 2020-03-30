@@ -65,8 +65,8 @@ public class Interactable : MonoBehaviour
                         cc.setDescriptionText("I can't use that here."); 
                     }
                     else {
-                        inv.expendItem();
                         cc.setDescriptionText("I used the "+ inv.getSelectedItem().itemName + "!");
+                        inv.expendItem();
                     }
                 }
             }
