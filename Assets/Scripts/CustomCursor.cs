@@ -11,6 +11,7 @@ public class CustomCursor : MonoBehaviour
     private Text cursorText;
     private Text descriptionText;
     public Image itemDisplay;
+    public Vector3 offset;
 
     void Start() {
         Cursor.visible = false;
@@ -21,7 +22,7 @@ public class CustomCursor : MonoBehaviour
 
     void Update() {
         //Cursor image follows real mouse position.
-        transform.position = Input.mousePosition;
+        transform.position = Input.mousePosition + offset;
     }
 
     public void setCursorText(string t) {

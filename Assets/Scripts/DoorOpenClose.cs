@@ -12,7 +12,6 @@ public class DoorOpenClose : MonoBehaviour
 
     void OnMouseOver()
     {
-        Debug.Log("Hovering");
         if (Input.GetMouseButtonDown(0))
         {
             animator.SetTrigger("OpenClose");
