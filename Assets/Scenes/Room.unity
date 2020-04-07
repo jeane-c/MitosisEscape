@@ -1295,7 +1295,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 0a74fa372d955408aa43b2caac5a651e,
         type: 3}
       propertyPath: m_Name
-      value: Jar Shelf Magnet
+      value: Cupboard Magnet
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0a74fa372d955408aa43b2caac5a651e,
         type: 3}
@@ -1305,12 +1305,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0a74fa372d955408aa43b2caac5a651e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1726
+      value: 1.053
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0a74fa372d955408aa43b2caac5a651e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.221
+      value: -0.241
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0a74fa372d955408aa43b2caac5a651e,
         type: 3}
@@ -4099,6 +4099,23 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1621730897}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &668376245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668376244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c541f21335b108846b8a94106b0f8b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Cabinet Door (Right)
+  description: 
+  canBeTaken: 0
+  item: {fileID: 0}
+  destroyWhenTaken: 1
 --- !u!95 &668376246
 Animator:
   serializedVersion: 3
@@ -5628,12 +5645,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: cf5f5397a464a40dcba92c9821dd0fe7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.8
+      value: 3.692
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cf5f5397a464a40dcba92c9821dd0fe7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.232
+      value: 1.177
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cf5f5397a464a40dcba92c9821dd0fe7,
         type: 3}
@@ -5769,6 +5786,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &954190486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954190484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c541f21335b108846b8a94106b0f8b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Cabinet Door (Left)
+  description: 
+  canBeTaken: 0
+  item: {fileID: 0}
+  destroyWhenTaken: 1
 --- !u!114 &954190487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9471,7 +9505,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6548244, guid: b09e95949a2b3cf489baf6fd2307361e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b09e95949a2b3cf489baf6fd2307361e, type: 3}
 --- !u!4 &1628181777 stripped
 Transform:
@@ -9532,7 +9567,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1633845776
 Transform:
   m_ObjectHideFlags: 0
