@@ -71,7 +71,7 @@ public class Interactable : MonoBehaviour
                 }
             }
             //If this object can't be taken, put the description text in the box
-            else { cc.setDescriptionText(description); }
+            else { if (description != "") cc.setDescriptionText(description); }
         }
     }
 

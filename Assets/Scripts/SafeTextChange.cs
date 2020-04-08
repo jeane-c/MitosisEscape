@@ -4,35 +4,40 @@ using UnityEngine;
 
 public class SafeTextChange : MonoBehaviour
 {
-    public string[] text_states = new string[4];
-    public int count = 0;
+    //the correct letter for this dial to be on
+    public string correctLetter = "A";
+
+    private string[] text_states = new string[4] {"A", "T", "C", "G"};
+    private int count = 0;
+    private TextMesh tm;
+    private SafePuzzleController spc;
 
     void Start()
     {
-        text_states[0] = "A";
-        text_states[1] = "T";
-        text_states[2] = "C";
-        text_states[3] = "G";
+        tm = gameObject.GetComponent<TextMesh>();
+        spc = gameObject.GetComponentInParent<SafePuzzleController>();
 
-        GetComponent<TextMesh>().text = text_states[count];
+        tm.text = text_states[count];
     }
-
 
     void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            count = count + 1;
-            if (count >= text_states.Length)
-            {
+            count++;
+            if (count >= text_states.Length) {
                 count = 0;
-                GetComponent<TextMesh>().text = text_states[count];
-            }
-            else
-            {
-                GetComponent<TextMesh>().text = text_states[count];
             }
 
+            tm.text = text_states[count];
+            spc.checkIfCorrect();
         }
+    }
+
+    public bool isCorrect() {
+        if (text_states[count] == correctLetter) {
+            return true;
+        }
+        return false;   
     }
 }
