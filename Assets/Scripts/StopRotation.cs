@@ -17,11 +17,9 @@ public class StopRotation : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             arrow.rotateObject = false;
-            if ((arrow.rotationValue > 0) && (arrow.rotationValue < 180)) {
-                Debug.Log(arrow.rotationValue);
+            if ((arrow.rotationValue <= 360) && arrow.rotationValue >= 270) {
                 Debug.Log("You are in the correct range");
             } else {
-                Debug.Log(arrow.rotationValue);
                 Debug.Log("you are in the wrong range");
                 StartCoroutine(ExampleCoroutine());
             }
