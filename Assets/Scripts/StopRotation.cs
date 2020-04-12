@@ -12,21 +12,28 @@ public class StopRotation : MonoBehaviour
         arrow.rotateObject = true;
     }
 
-
     void OnMouseOver()
     {
-        Debug.Log("hovering");
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("is this working?");
             arrow.rotateObject = false;
+            if ((arrow.rotationValue > 0) && (arrow.rotationValue < 180)) {
+                Debug.Log(arrow.rotationValue);
+                Debug.Log("You are in the correct range");
+            } else {
+                Debug.Log(arrow.rotationValue);
+                Debug.Log("you are in the wrong range");
+                StartCoroutine(ExampleCoroutine());
+            }
 
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator ExampleCoroutine()
     {
-        
+        yield return new WaitForSeconds(5);
+
+        arrow.rotateObject = true;
     }
+
 }

@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class RotatingArrow : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public bool rotateObject;
+    public float rotationValue;
+
     void Start()
     {
-
     }
 
-    public bool rotateObject; 
 
     void Update()
     {
-        if (rotateObject) { 
-            transform.Rotate(new Vector3(0f, Time.deltaTime * 500, 0f));
-        } else
-        {
-            Debug.Log("stop please");
+        if (rotateObject) {
+            rotationValue = this.transform.localRotation.eulerAngles.x;
+            transform.Rotate(new Vector3(0f, Time.deltaTime * 10, 0f));
         }
     }
 }
