@@ -11,13 +11,8 @@ public class RotatingArrow : MonoBehaviour
     {
         if (rotateObject) {
             rotationValue = transform.eulerAngles.x;
-            transform.Rotate(new Vector3(0f, Time.deltaTime * 100, 0f));
-          //  if (rotationValue >= 360) {
-               // rotationValue = 0; 
-          //  } else { 
-         //      // rotationValue += Time.deltaTime * 1000;
-           // }
-
+            transform.Rotate(new Vector3(0f, Time.deltaTime * 30, 0f));
+            // transform.localRotation = Quaternion.Euler(0f, 90f, 0f);
         }
     }
 }
