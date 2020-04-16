@@ -12,7 +12,7 @@ public class CameraMovement : MonoBehaviour
     }
 
     float inputX, inputZ;
-    int degree = 0;
+    // int degree = 0;
     // Update is called once per frame
     void Update()
     {
