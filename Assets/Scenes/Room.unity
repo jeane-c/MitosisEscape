@@ -3250,9 +3250,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Zip Tie
   description: 
-  canBeTaken: 0
+  canBeTaken: 1
   item: {fileID: 0}
   destroyWhenTaken: 1
+--- !u!65 &435196917
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435196914}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.7474966, y: 87.06568, z: 118.55824}
+  m_Center: {x: 2.8737485, y: -153.76485, z: -28.715288}
 --- !u!4 &439376927 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 490002, guid: 6b2098cbc1fd4384da8ca063c3d4eb24,
