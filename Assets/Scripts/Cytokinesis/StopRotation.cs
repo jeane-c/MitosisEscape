@@ -5,6 +5,9 @@ using UnityEngine;
 public class StopRotation : MonoBehaviour
 {
     public RotatingArrow arrow;
+    public float maxRotationValue;
+    public float minRotationValue;
+    public bool completed = false;
 
     void Start()
     {
@@ -17,8 +20,9 @@ public class StopRotation : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             arrow.rotateObject = false;
-            if ((arrow.rotationValue <= 360) && arrow.rotationValue >= 270) {
+            if ((arrow.rotationValue <= maxRotationValue) && arrow.rotationValue >= minRotationValue) {
                 Debug.Log("You are in the correct range");
+                completed = true;
             } else {
                 Debug.Log("you are in the wrong range");
                 StartCoroutine(ExampleCoroutine());
