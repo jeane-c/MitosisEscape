@@ -23,7 +23,7 @@ public class PuzzleMain : MonoBehaviour
     }
 
     private void completePuzzle() {
-        Instantiate(objectToSpawn, transform.TransformPoint(localSpawnCoordinates), Quaternion.identity);
+        Instantiate(objectToSpawn, transform.TransformPoint(localSpawnCoordinates), objectToSpawn.transform.rotation);
 
         for (int i = 0; i < objectsToDelete.Length; i++) {
             GameObject.Destroy(objectsToDelete[i]);
