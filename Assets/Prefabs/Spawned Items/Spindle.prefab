@@ -568,7 +568,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7480031318036904557}
-  - component: {fileID: 2500865675144941941}
   - component: {fileID: 8020819134650603315}
   m_Layer: 0
   m_Name: Spindle
@@ -599,23 +598,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2500865675144941941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5878658776415078526}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c541f21335b108846b8a94106b0f8b01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Spindle
-  description: A polar spindle
-  canBeTaken: 1
-  item: {fileID: 11400000, guid: 84752b165c5474edc8de77ee66fcebd1, type: 2}
-  destroyWhenTaken: 1
 --- !u!114 &8020819134650603315
 MonoBehaviour:
   m_ObjectHideFlags: 0

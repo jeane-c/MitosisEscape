@@ -247,6 +247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7480031318036904557}
   - component: {fileID: 2500865675144941941}
+  - component: {fileID: -540196661178327860}
   m_Layer: 0
   m_Name: MagnetSpindle
   m_TagString: Untagged
@@ -290,6 +291,19 @@ MonoBehaviour:
   canBeTaken: 1
   item: {fileID: 11400000, guid: 84752b165c5474edc8de77ee66fcebd1, type: 2}
   destroyWhenTaken: 1
+--- !u!65 &-540196661178327860
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5878658776415078526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.05, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6601800040060119218
 GameObject:
   m_ObjectHideFlags: 0

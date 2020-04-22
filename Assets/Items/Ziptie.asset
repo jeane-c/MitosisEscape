@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6c874768585f8147945e05bb7987269, type: 3}
-  m_Name: Comb
+  m_Name: Ziptie
   m_EditorClassIdentifier: 
-  itemName: Comb
-  icon: {fileID: 21300000, guid: 5cb0bbcb0b9954a448a47b9104c9846f, type: 3}
-  id: 99
+  itemName: Ziptie
+  icon: {fileID: 21300000, guid: f3ec10adb590df14780ce3dd3c80e8d1, type: 3}
+  id: 8

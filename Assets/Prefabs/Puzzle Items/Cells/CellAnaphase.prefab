@@ -4169,6 +4169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 0}
+  doorName: corpse_drawer_door (ANAPHASE)
 --- !u!1 &7562527650421253917
 GameObject:
   m_ObjectHideFlags: 0

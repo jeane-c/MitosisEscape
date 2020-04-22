@@ -42,7 +42,7 @@ public class SpawnFullMagnet : MonoBehaviour
 
 
         for (int i = 0; i < objectsToDelete.Length; i++) {
-            GameObject.Destroy(objectsToDelete[i]);
+            Object.Destroy(gameObject);
         }
     }
 }
