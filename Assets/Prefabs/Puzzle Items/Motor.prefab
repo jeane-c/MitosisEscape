@@ -626,7 +626,7 @@ MonoBehaviour:
   itemName: Motor
   description: Small but powerful
   canBeTaken: 1
-  item: {fileID: 11400000, guid: 66b5f71eb0ffb8642954e7a1938db008, type: 2}
+  item: {fileID: 11400000, guid: d7ccdf6184e304c0eb48414dbab72e1c, type: 2}
   destroyWhenTaken: 1
 --- !u!1 &4917458143182657709
 GameObject:
