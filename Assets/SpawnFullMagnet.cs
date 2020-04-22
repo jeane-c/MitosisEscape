@@ -24,13 +24,6 @@ public class SpawnFullMagnet : MonoBehaviour
     angel3 =  (int)m3.transform.localEulerAngles[1];
       angel4 =  (int)m4.transform.localEulerAngles[1];
         angel5 = (int) m5.transform.localEulerAngles[1];
-
-        print("angel1 " + angel1);
-          print("angel2 " + angel2);
-            print("angel3 " + angel3);
-              print("angel4 " + angel4);
-                print("angel5 " + angel5);
-
         
         
        
@@ -45,7 +38,7 @@ public class SpawnFullMagnet : MonoBehaviour
     private void spawnMagnet() {
         check = false;
         GameObject newObject = Instantiate(objectToSpawn, transform.TransformPoint(localSpawnCoordinates), objectToSpawn.transform.rotation);
-        newObject.transform.localScale = new Vector3(0.03f, 0.02f, .03f);
+        newObject.transform.localScale = new Vector3(1.5f, 1.3f, 1.5f);
 
 
         for (int i = 0; i < objectsToDelete.Length; i++) {
