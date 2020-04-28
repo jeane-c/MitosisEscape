@@ -14,6 +14,9 @@ public class StageUpdate : MonoBehaviour
 
         door.GetComponent<DoorOpenClose>().GetComponent<Animator>().enabled = true;
         door.transform.GetComponentInChildren<TextMesh>().color =Color.green;
+        GameObject go = GameObject.Find("Blackboard");
+        UpdateBlackboardText other = (UpdateBlackboardText) go.GetComponent(typeof(UpdateBlackboardText));
+        other.next();
     }
 
 }
