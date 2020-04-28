@@ -18,10 +18,8 @@ public class UpdateBlackboardText : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.M)) {
-            count = count + 1;
+    public void nextTexture(){
+        count = count + 1;
             if (count >= material.Length)
             {
                 count = 0;
@@ -31,9 +29,5 @@ public class UpdateBlackboardText : MonoBehaviour
             {
                 rend.sharedMaterial = material[count];
             }
-        }
-              
     }
-
-
 }
