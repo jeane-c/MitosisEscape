@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Spindle
   m_EditorClassIdentifier: 
   itemName: Spindle
-  icon: {fileID: 21300000, guid: 2792607dccd8e4fd98a104d9128905b5, type: 3}
+  icon: {fileID: 21300000, guid: edfb182f633aa43548ace347e9fdf7c5, type: 3}
   id: 1

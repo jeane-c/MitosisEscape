@@ -9,7 +9,8 @@ public class ParentCircle : MonoBehaviour
     public int i = 0;
     public Vector3 localSpawnCoordinates = Vector3.zero;
     public GameObject circle;
-  
+    public GameObject itemToSpawn;
+    public string nameOfItemToDestroy;
 
 
     // Start is called before the first frame update
@@ -34,11 +35,19 @@ public class ParentCircle : MonoBehaviour
                 Debug.Log(i);
                 circle = Instantiate(current[i + 1], transform.TransformPoint(localSpawnCoordinates), Quaternion.identity) as GameObject;
                 circle.transform.parent = this.transform;
+                circle.transform.Rotate(0f, 120f, 0f, Space.Self);
                 childCircle = circle.GetComponentInChildren<StopRotation>();
                 i++;
                 updateRange();
             }
-
+            else {
+                GameObject newObj = Instantiate(itemToSpawn, transform.TransformPoint(localSpawnCoordinates), Quaternion.identity) as GameObject;
+                //I'm hardcoding this right now because I officially do not care anymore and I'm tired. -- JEANE
+                newObj.transform.Rotate(0f,-25f,0f,Space.Self);
+                newObj.transform.Translate(1,0,-1);
+                Object.Destroy(GameObject.Find(nameOfItemToDestroy));
+                Object.Destroy(gameObject);
+            }
         }
         
     }

@@ -5,13 +5,14 @@ using UnityEngine;
 public class MagnetRotate : MonoBehaviour
 {
     public GameObject m1, m2, m3, m4, m5;
+    public Camera MachineCamera;
     Ray ray;
     RaycastHit hit;
      
      void Update()
      {
             if(Input.GetMouseButtonDown(0)){
-                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                ray = MachineCamera.ScreenPointToRay(Input.mousePosition);
                  if(Physics.Raycast(ray, out hit))
                  {
                     if (hit.collider.name == "MButton1"){
