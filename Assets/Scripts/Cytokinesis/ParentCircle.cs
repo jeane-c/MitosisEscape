@@ -44,7 +44,7 @@ public class ParentCircle : MonoBehaviour
                 GameObject newObj = Instantiate(itemToSpawn, transform.TransformPoint(localSpawnCoordinates), Quaternion.identity) as GameObject;
                 //I'm hardcoding this right now because I officially do not care anymore and I'm tired. -- JEANE
                 newObj.transform.Rotate(0f,-25f,0f,Space.Self);
-                newObj.transform.Translate(1,0,-1);
+                newObj.transform.position=new Vector3(2,1.5f,-2.5f);
                 Object.Destroy(GameObject.Find(nameOfItemToDestroy));
                 Object.Destroy(gameObject);
             }
