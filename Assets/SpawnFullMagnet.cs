@@ -40,9 +40,10 @@ public class SpawnFullMagnet : MonoBehaviour
         GameObject newObject = Instantiate(objectToSpawn, transform.TransformPoint(localSpawnCoordinates), objectToSpawn.transform.rotation);
         newObject.transform.localScale = new Vector3(1.5f, 1.3f, 1.5f);
 
-
-        for (int i = 0; i < objectsToDelete.Length; i++) {
-            Object.Destroy(gameObject);
-        }
+          Destroy(gameObject);
+        
     }
 }
+// for (int i = 0; i < objectsToDelete.Length; i++) {
+        //     Object.Destroy(gameObject);
+        // }

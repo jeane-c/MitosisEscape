@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 8438397589200685849}
   - component: {fileID: 6589251438078256243}
   - component: {fileID: 2316692491880793383}
+  - component: {fileID: 3758437636968150172}
   m_Layer: 0
   m_Name: MButton1
   m_TagString: Untagged
@@ -187,6 +188,23 @@ MonoBehaviour:
   m1: {fileID: 7178324165056082258}
   m4: {fileID: 3731014804144974}
   m5: {fileID: 6601800040060119218}
+--- !u!114 &3758437636968150172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534815460045400419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c541f21335b108846b8a94106b0f8b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Button 1
+  description: 
+  canBeTaken: 0
+  item: {fileID: 0}
+  destroyWhenTaken: 0
 --- !u!1 &2770606281282983230
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,6 +218,7 @@ GameObject:
   - component: {fileID: 5949957784042205780}
   - component: {fileID: 7142142571310791195}
   - component: {fileID: 2355795872274184095}
+  - component: {fileID: 462064257630288322}
   m_Layer: 0
   m_Name: MButton2
   m_TagString: Untagged
@@ -294,6 +313,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m2: {fileID: 4979904371799758462}
   m3: {fileID: 4234889295511294423}
+--- !u!114 &462064257630288322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2770606281282983230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c541f21335b108846b8a94106b0f8b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Button 2
+  description: 
+  canBeTaken: 0
+  item: {fileID: 0}
+  destroyWhenTaken: 1
 --- !u!1 &4234889295511294423
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +501,7 @@ GameObject:
   - component: {fileID: 7046247477813794855}
   - component: {fileID: 8839393778166959266}
   - component: {fileID: 1277491652175473478}
+  - component: {fileID: 5458305653499539313}
   m_Layer: 0
   m_Name: MButton3
   m_TagString: Untagged
@@ -559,6 +596,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m2: {fileID: 4979904371799758462}
   m5: {fileID: 6601800040060119218}
+--- !u!114 &5458305653499539313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4983528560744032176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c541f21335b108846b8a94106b0f8b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Button 3
+  description: 
+  canBeTaken: 0
+  item: {fileID: 0}
+  destroyWhenTaken: 1
 --- !u!1 &5878658776415078526
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,8 +671,9 @@ MonoBehaviour:
   m5: {fileID: 6601800040060119218}
   objectToSpawn: {fileID: 5878658776415078526, guid: 604be2578617e4fccb6864ba3374cf52,
     type: 3}
-  localSpawnCoordinates: {x: 0.3, y: 0.05, z: 0}
-  objectsToDelete: []
+  localSpawnCoordinates: {x: 0.25, y: 0.05, z: 0}
+  objectsToDelete:
+  - {fileID: 7178324165056082258}
   angel1: 0
   angel2: 0
   angel3: 0
