@@ -5240,7 +5240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac34362e0d760bf48b70d59944638ed2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flagsNeededToActivate: 5
+  flagsNeededToActivate: 1
   objectToSpawn: {fileID: 5878658776415078526, guid: ed866f9d0e8a54d40aa747efafbe3f87,
     type: 3}
   localSpawnCoordinates: {x: -0.7, y: 1.3, z: 0}
