@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public string itemName; //Object name; shown on hover.
-    public string description; //Object description; shown on click if item can't be picked up. 
+    public string itemName = ""; //Object name; shown on hover.
+    public string description = ""; //Object description; shown on click if item can't be picked up. 
     public bool canBeTaken; //Whether or not the object can be picked up.
     public Item item; //The item added to the inventory when the object is picked up.
     public bool destroyWhenTaken = true; //Whether or not the gameobject will be destroyed when the item is picked up.
@@ -25,60 +25,65 @@ public class Interactable : MonoBehaviour
     }
 
     void OnMouseOver() {
-        //Sets the cursor text to this object's name when hovered over
-        cc.setCursorText(itemName);
+        //prevents a weird bug with Unity
+        if (this.enabled) {
+            //Sets the cursor text to this object's name when hovered over
+            cc.setCursorText(itemName);
 
 
-        //On click...
-        if (Input.GetMouseButtonDown(0)) {
-            if (canBeTaken) { 
-                TakeItem();
-                //Set the description to be blank
-                cc.setDescriptionText(""); 
+            //On click...
+            if (Input.GetMouseButtonDown(0)) {
+                if (canBeTaken) { 
+                    TakeItem();
+                    //Set the description to be blank
+                    cc.setDescriptionText(""); 
 
-                //if the object is destroyed when taken, destroy it. Otherwise, just make it so you can't take it again.
-                if (destroyWhenTaken) {
-                    cc.setCursorText("");
-                    Object.Destroy(gameObject); 
-                }
-                else { canBeTaken = false; }
-            }
-            //if the user is trying to use an item on this object
-            else if (inv.getSelectedItem() != null) {
-                //if this interactable has no puzzles on it, then deselect the item and change description accordingly
-                if (puzzles == null) {
-                    inv.deselectItem();
-                    cc.setDescriptionText("I can't use that here.");
-                }
-                else {
-                    //check any puzzles on this object; if this item works with one of them, then end and move. Otherwise, set description accordingly. 
-                    bool worked = false;
-                    for (int i = 0; i < puzzles.Length; i++) {
-                        if (puzzles[i].useItem(inv.getSelectedItem())) { 
-                            worked = true; 
-                            break; 
-                        }
+                    //if the object is destroyed when taken, destroy it. Otherwise, just make it so you can't take it again.
+                    if (destroyWhenTaken) {
+                        cc.setCursorText("");
+                        Object.Destroy(gameObject); 
                     }
-
-                    if (!worked) { 
-                        inv.deselectItem(); 
-                        cc.setDescriptionText("I can't use that here."); 
+                    else { canBeTaken = false; }
+                }
+                //if the user is trying to use an item on this object
+                else if (inv.getSelectedItem() != null) {
+                    //if this interactable has no puzzles on it, then deselect the item and change description accordingly
+                    if (puzzles == null) {
+                        inv.deselectItem();
+                        cc.setDescriptionText("I can't use that here.");
                     }
                     else {
-                        cc.setDescriptionText("I used the "+ inv.getSelectedItem().itemName + "!");
-                        inv.expendItem();
+                        //check any puzzles on this object; if this item works with one of them, then end and move. Otherwise, set description accordingly. 
+                        bool worked = false;
+                        for (int i = 0; i < puzzles.Length; i++) {
+                            if (puzzles[i].useItem(inv.getSelectedItem())) { 
+                                worked = true; 
+                                break; 
+                            }
+                        }
+
+                        if (!worked) { 
+                            inv.deselectItem(); 
+                            cc.setDescriptionText("I can't use that here."); 
+                        }
+                        else {
+                            cc.setDescriptionText("I used the "+ inv.getSelectedItem().itemName + "!");
+                            inv.expendItem();
+                        }
                     }
                 }
+                //If this object can't be taken, put the description text in the box
+                else { if (description != "") cc.setDescriptionText(description); }
             }
-            //If this object can't be taken, put the description text in the box
-            else { if (description != "") cc.setDescriptionText(description); }
         }
     }
 
     void OnMouseExit() {
-        //When the mouse is no longer hovering over this object, empty the cursor text
-        cc.setCursorText("");
-
+        //prevents a weird bug with Unity
+        if (this.enabled) {
+            //When the mouse is no longer hovering over this object, empty the cursor text
+            cc.setCursorText("");
+        }
     }
 
     void TakeItem() {

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Gas Can
   m_EditorClassIdentifier: 
   itemName: Gas Can
-  icon: {fileID: 21300000, guid: 636ea45e433cd4e0dbbacd1cc8977aa6, type: 3}
+  icon: {fileID: 21300000, guid: 717265c598188464489c1cecb9c915d4, type: 3}
   id: 7

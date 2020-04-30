@@ -30,7 +30,22 @@ public class SafePuzzleController : MonoBehaviour
     //called once all dials are correct
     private void completePuzzle() {
         Debug.Log("Puzzle is correct!");
+        dials[0].transform.GetComponentInChildren<TextMesh>().color = Color.green;
+        dials[1].transform.GetComponentInChildren<TextMesh>().color = Color.green;
+        dials[2].transform.GetComponentInChildren<TextMesh>().color = Color.green;
+        dials[3].transform.GetComponentInChildren<TextMesh>().color = Color.green;
+        dials[4].transform.GetComponentInChildren<TextMesh>().color = Color.green;
+        dials[5].transform.GetComponentInChildren<TextMesh>().color = Color.green;
+
+        StartCoroutine(ExampleCoroutine());
+    }
+
+    // Pause for a second before opening
+    IEnumerator ExampleCoroutine()
+    {
+        yield return new WaitForSeconds(1);
         doorAnim.SetTrigger("OpenClose");
         GameObject.Destroy(gameObject);
     }
+
 }

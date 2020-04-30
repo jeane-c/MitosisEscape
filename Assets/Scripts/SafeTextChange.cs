@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SafeTextChange : MonoBehaviour
 {
+    public string initialLetter = "A";
     //the correct letter for this dial to be on
     public string correctLetter = "A";
 
@@ -16,6 +17,14 @@ public class SafeTextChange : MonoBehaviour
     {
         tm = gameObject.GetComponent<TextMesh>();
         spc = gameObject.GetComponentInParent<SafePuzzleController>();
+
+        switch (initialLetter) {
+            case "A": count = 0; break;
+            case "T": count = 1; break;
+            case "C": count = 2; break;
+            case "G": count = 3; break;
+            default: break;
+        }
 
         tm.text = text_states[count];
     }
