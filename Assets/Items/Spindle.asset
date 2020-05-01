@@ -15,3 +15,4 @@ MonoBehaviour:
   itemName: Spindle
   icon: {fileID: 21300000, guid: edfb182f633aa43548ace347e9fdf7c5, type: 3}
   id: 1
+  textonuse: I used the polymer!

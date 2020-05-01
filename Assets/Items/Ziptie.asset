@@ -15,3 +15,4 @@ MonoBehaviour:
   itemName: Ziptie
   icon: {fileID: 21300000, guid: f3ec10adb590df14780ce3dd3c80e8d1, type: 3}
   id: 8
+  textonuse: I used the ziptie! Now I need to tighten it to cinch the cell.

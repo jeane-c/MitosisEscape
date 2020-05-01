@@ -142,7 +142,8 @@ MonoBehaviour:
   description: Click when the spinner is in the red zone to cinch the cell
   canBeTaken: 0
   item: {fileID: 0}
-  destroyWhenTaken: 0
+  destroyWhenTaken: 1
+  textonuse: 
 --- !u!1001 &7775466360459202575
 PrefabInstance:
   m_ObjectHideFlags: 0

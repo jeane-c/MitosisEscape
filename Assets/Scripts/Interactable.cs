@@ -9,7 +9,6 @@ public class Interactable : MonoBehaviour
     public bool canBeTaken; //Whether or not the object can be picked up.
     public Item item; //The item added to the inventory when the object is picked up.
     public bool destroyWhenTaken = true; //Whether or not the gameobject will be destroyed when the item is picked up.
-
     //the CustomCursor in the scene; should only be one.
     private CustomCursor cc;
     //the inventory; should also only be one
@@ -67,7 +66,11 @@ public class Interactable : MonoBehaviour
                             cc.setDescriptionText("I can't use that here."); 
                         }
                         else {
-                            cc.setDescriptionText("I used the "+ inv.getSelectedItem().itemName + "!");
+                            if(inv.getSelectedItem().textonuse==""){
+                                cc.setDescriptionText("I used the "+ inv.getSelectedItem().itemName + "!");
+                            }else{
+                                cc.setDescriptionText(inv.getSelectedItem().textonuse);
+                            }
                             inv.expendItem();
                         }
                     }

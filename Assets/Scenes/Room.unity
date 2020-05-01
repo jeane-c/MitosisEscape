@@ -301,6 +301,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!114 &25930654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1621,6 +1622,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!114 &253892086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1804,6 +1806,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!1 &262609417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,6 +1882,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!65 &262609421
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2530,6 +2534,7 @@ MonoBehaviour:
   canBeTaken: 1
   item: {fileID: 11400000, guid: 6df8a47bad383f44788d8a99f9fef7a5, type: 2}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!65 &343323478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2649,6 +2654,7 @@ MonoBehaviour:
   canBeTaken: 1
   item: {fileID: 11400000, guid: 6df8a47bad383f44788d8a99f9fef7a5, type: 2}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!65 &367768756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3261,6 +3267,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!114 &470943901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3673,6 +3680,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!1 &515894795
 GameObject:
   m_ObjectHideFlags: 0
@@ -3813,6 +3821,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!4 &530385175 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 402278, guid: 38c8dc4fecdb792408805686d9bf2734,
@@ -4160,6 +4169,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!1 &560658485
 GameObject:
   m_ObjectHideFlags: 0
@@ -4570,6 +4580,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!1001 &587220380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4942,6 +4953,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!95 &668376246
 Animator:
   serializedVersion: 3
@@ -5780,6 +5792,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!114 &850181743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6631,6 +6644,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!114 &954190487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7137,6 +7151,7 @@ MonoBehaviour:
   canBeTaken: 1
   item: {fileID: 11400000, guid: 6df8a47bad383f44788d8a99f9fef7a5, type: 2}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!65 &1051119301
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7662,6 +7677,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!95 &1174505933
 Animator:
   serializedVersion: 3
@@ -7735,6 +7751,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!114 &1174534451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8498,6 +8515,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!1001 &1274920092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8794,6 +8812,7 @@ MonoBehaviour:
   canBeTaken: 1
   item: {fileID: 11400000, guid: 6df8a47bad383f44788d8a99f9fef7a5, type: 2}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!65 &1334035170
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10582,7 +10601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1633845776
 Transform:
   m_ObjectHideFlags: 0
@@ -11174,6 +11193,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!114 &1689230273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12990,6 +13010,7 @@ MonoBehaviour:
   canBeTaken: 1
   item: {fileID: 11400000, guid: 6df8a47bad383f44788d8a99f9fef7a5, type: 2}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!65 &1849375321
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13674,6 +13695,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!114 &1998030602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13879,6 +13901,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!114 &2042538147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14106,6 +14129,7 @@ MonoBehaviour:
   canBeTaken: 0
   item: {fileID: 0}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!95 &2110243245
 Animator:
   serializedVersion: 3
@@ -14894,6 +14918,7 @@ MonoBehaviour:
   canBeTaken: 1
   item: {fileID: 11400000, guid: d4ee8759654658841a3c9446e0dc1964, type: 2}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!65 &1429428379616846720
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14984,6 +15009,7 @@ MonoBehaviour:
   canBeTaken: 1
   item: {fileID: 11400000, guid: 6a688e2df3d8f4c85821281dec5cb988, type: 2}
   destroyWhenTaken: 1
+  textonuse: KAGDGHJDGJD
 --- !u!65 &1953628878254620825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15217,6 +15243,7 @@ MonoBehaviour:
   canBeTaken: 1
   item: {fileID: 11400000, guid: fbd0590e3b8974f8e991c8ac4d3f8633, type: 2}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!23 &2691564522507789102
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15593,6 +15620,7 @@ MonoBehaviour:
   canBeTaken: 1
   item: {fileID: 11400000, guid: d7ccdf6184e304c0eb48414dbab72e1c, type: 2}
   destroyWhenTaken: 1
+  textonuse: 
 --- !u!4 &4543049899764470531
 Transform:
   m_ObjectHideFlags: 0
@@ -16166,6 +16194,7 @@ MonoBehaviour:
   canBeTaken: 1
   item: {fileID: 11400000, guid: ec2e67cd9584c42d4993f3780f994af5, type: 2}
   destroyWhenTaken: 1
+  textonuse: I provided energy to the cell!
 --- !u!1 &7946538701010072575
 GameObject:
   m_ObjectHideFlags: 0

@@ -291,6 +291,7 @@ MonoBehaviour:
   canBeTaken: 1
   item: {fileID: 11400000, guid: 84752b165c5474edc8de77ee66fcebd1, type: 2}
   destroyWhenTaken: 1
+  textonuse: I used the polymer!
 --- !u!65 &-540196661178327860
 BoxCollider:
   m_ObjectHideFlags: 0
