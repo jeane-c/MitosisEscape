@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2478853010446238457}
   m_LocalRotation: {x: 0, y: 0.99904823, z: 0, w: 0.0436195}
-  m_LocalPosition: {x: 3.01, y: 0.76, z: 0}
+  m_LocalPosition: {x: 3.11, y: 0.76, z: -1.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4492214420403465153}
@@ -194,7 +194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4492214419956660950}
   m_LocalRotation: {x: -0, y: 0.74895567, z: -0, w: 0.66262007}
-  m_LocalPosition: {x: -5.99, y: -3.8689997, z: 20.272999}
+  m_LocalPosition: {x: -6.484, y: -3.725, z: 20.579}
   m_LocalScale: {x: 1.25, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 4492214420265633845}
@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 4492214420403465155}
   - component: {fileID: 4492214420403465154}
   - component: {fileID: 3959913083434602343}
+  - component: {fileID: 2153397217109895417}
   m_Layer: 0
   m_Name: CellFinal
   m_TagString: Untagged
@@ -362,6 +363,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   door: {fileID: 0}
   doorName: corpse_drawer_door (CREDITS)
+--- !u!114 &2153397217109895417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4492214420403465152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4ddd6090e9a45b696b274937035d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4492214420523703749
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,7 +399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4492214420523703749}
   m_LocalRotation: {x: -0, y: 0.74895567, z: -0, w: 0.66262007}
-  m_LocalPosition: {x: -4.88, y: -4.789, z: 20.143}
+  m_LocalPosition: {x: -4.62, y: -4.789, z: 20.11}
   m_LocalScale: {x: 1.25, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 4492214418922256098}
