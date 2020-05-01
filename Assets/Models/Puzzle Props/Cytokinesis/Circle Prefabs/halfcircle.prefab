@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &7775466359079290249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786218637244549382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e206a00d87b4731bf6710ecffe225f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateObject: 1
+  rotationValue: 0
 --- !u!1 &5728186845111217663
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,8 +27,9 @@ GameObject:
   - component: {fileID: 6287673356409461027}
   - component: {fileID: 4350326058806492196}
   - component: {fileID: 4350326058806492199}
+  - component: {fileID: -6520599913528024569}
   m_Layer: 0
-  m_Name: halfcircle 1
+  m_Name: halfcircle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,20 +123,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrow: {fileID: 0}
---- !u!114 &7775466359079290249
+  maxRotationValue: 0
+  minRotationValue: 0
+  completed: 0
+--- !u!114 &-6520599913528024569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1786218637244549382}
+  m_GameObject: {fileID: 5728186845111217663}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e206a00d87b4731bf6710ecffe225f, type: 3}
+  m_Script: {fileID: 11500000, guid: c541f21335b108846b8a94106b0f8b01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateObject: 1
-  rotationValue: 0
+  itemName: Click when the spinner is in the red zone to cinch the cell
+  description: Click when the spinner is in the red zone to cinch the cell
+  canBeTaken: 0
+  item: {fileID: 0}
+  destroyWhenTaken: 0
 --- !u!1001 &7775466360459202575
 PrefabInstance:
   m_ObjectHideFlags: 0
